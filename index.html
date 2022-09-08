@@ -8,13 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Alegreya&family=Roboto+Slab&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -26,30 +20,32 @@
 
   <body>
     <header>
-      <nav>
+      <div class="conteiner main-nav">
+      <nav class="main-nav">
         <a href="index.html" class="logo"><span>Web</span>Studio</a>
-        <ul class="site-nav list">
-          <li><a href="" class="nav-link current">Студія</a></li>
-          <li><a href="portfolio.html" class="nav-link">Портфоліо</a></li>
-          <li><a href="" class="nav-link">Контакти</a></li>
+        <ul class="site-nav list indent">
+          <li class="item"><a href="" class="nav-link current">Студія</a></li>
+          <li class="item"><a href="portfolio.html" class="nav-link">Портфоліо</a></li>
+          <li class="item"><a href="" class="nav-link">Контакти</a></li>
         </ul>
       </nav>
-      <ul class="site-nav list">
-        <li>
+      <ul class="auth-nav site-nav list indent">
+        <li class="item">
           <a href="#mailto:info@devstudio.com" class="nav-link contacts-header"
             >info@devstudio.com</a
           >
         </li>
-        <li><a href="#tel:+380961111111" class="nav-link contacts-header">+38 096 111 11 11</a></li>
+        <li class="item"><a href="#tel:+380961111111" class="nav-link contacts-header">+38 096 111 11 11</a></li>
       </ul>
+    </div>
     </header>
     <main class="main">
       <section class="hero">
         <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="hero-btn">Замовити послугу</button>
       </section>
-      <!-- Обернула в список, виправила на h3 -->
       <section class="about">
+        <div class="conteiner about-text">
         <h2 hidden>УВАГА ДО ДЕТАЛЕЙ</h2>
         <ul class="site-nav list">
           <li>
@@ -77,12 +73,13 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
       <section class="img">
-        <h2 class="general-title">Чим ми займаємося</h2>
+        <div class="conteiner">
+        <h2 class="img-title">Чим ми займаємося</h2>
         <ul class="site-nav list">
           <li>
-            <!-- Прибрала висоту -->
             <img src="./images/tablet.jpg" alt="Планшет клавіатура" width="376" />
           </li>
           <li>
@@ -92,37 +89,39 @@
             <img src="./images/tablet-2.jpg" alt="Планшет" width="376" />
           </li>
         </ul>
+      </div>
       </section>
       <section class="team">
+        <div class="conteiner">
         <h2 class="general-title">Наша команда</h2>
-        <!-- Виправила <h2> на <h3> -->
         <ul class="site-nav list">
           <li>
-            <img src="./images/human-1.jpg" alt="Ігор Дем'яненко" width="270" />
+            <img class="foto-human" src="./images/human-1.jpg" alt="Ігор Дем'яненко" width="270" />
             <h3 class="name">Ігор Дем'яненко</h3>
             <p class="name-text">Product Designer</p>
           </li>
           <li>
-            <img src="./images/human-2.jpg" alt="Ольга Рєпіна" width="270" />
+            <img class="foto-human" src="./images/human-2.jpg" alt="Ольга Рєпіна" width="270" />
             <h3 class="name">Ольга Рєпіна</h3>
             <p class="name-text">Frontend Developer</p>
           </li>
           <li>
-            <img src="./images/human-3.jpg" alt="Микола Тарасов" width="270" />
+            <img class="foto-human" src="./images/human-3.jpg" alt="Микола Тарасов" width="270" />
             <h3 class="name">Микола Тарасов</h3>
             <p class="name-text">Marketing</p>
           </li>
           <li>
-            <img src="./images/human-4.jpg" alt="Михайло Єрмаков" width="270" />
+            <img class="foto-human" src="./images/human-4.jpg" alt="Михайло Єрмаков" width="270" />
             <h3 class="name">Михайло Єрмаков</h3>
             <p class="name-text">UI Designer</p>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <footer class="footer">
+      <div class="conteiner">
       <a href="index.html" class="logo logo-footer"><span>Web</span>Studio</a>
-      <!-- Додала rel=noopener nofollow noreferrer; Обернула в список -->
       <address>
         <ul class="list">
           <li>
@@ -143,12 +142,13 @@
             >
           </li>
           <li>
-            <a id="tel:+380961111111" href="tel:+380961111111" class="address-list contacts"
+            <a id="tel:+380961111111" href="tel:+380961111111" class="address-list contacts telef"
               >+38 096 111 11 11</a
             >
           </li>
         </ul>
       </address>
+    </div>
     </footer>
   </body>
 </html>
