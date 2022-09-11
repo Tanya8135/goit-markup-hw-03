@@ -197,7 +197,7 @@ ul {
 .hero {
   background: var(--color-fon-site);
   text-align: center;
-  padding-bottom: 94px;
+  padding-bottom: 200px;
 }
 
 .hero-text {
@@ -225,8 +225,7 @@ ul {
   padding: 10px 34px;
   border: none;
   min-width: 216px;
-  margin-bottom: 200px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 /* About section */
