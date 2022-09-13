@@ -32,9 +32,10 @@ img {
   margin: 0 auto;
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  overflow: hidden;
 }
 
 .header-border {
@@ -287,21 +288,35 @@ img {
 }
 
 .img-item {
-  display: flex;
+  
   flex-wrap: wrap;
+<<<<<<< Updated upstream
+=======
+  background-color: tomato;
+>>>>>>> Stashed changes
 }
 
 .img-flex {
-  width: 370px;
+  max-width: 370px;
   margin-right: 30px;
+<<<<<<< Updated upstream
   overflow: hidden;
 }
 
+=======
+}
+
+.img-nogap {
+  height: auto;
+}
+
+>>>>>>> Stashed changes
 .img-flex:nth-child(3n) {
   margin-right: 0;
 }
 
 .img-title {
+  margin: 0;
   margin-top: 0;
   margin-bottom: 50px;
   text-align: center;
@@ -309,6 +324,10 @@ img {
   font-size: 36px;
   line-height: 1.17;
   color: var(--title-text-color);
+}
+
+.no-gap.img-nogap {
+  display: block;
 }
 
 .team-our {
